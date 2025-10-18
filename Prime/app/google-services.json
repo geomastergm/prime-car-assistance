@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "167709634299",
+    "project_id": "carassistent-e343a",
+    "storage_bucket": "carassistent-e343a.firebasestorage.app",
+    "firebase_url": "https://carassistent-e343a-default-rtdb.firebasedatabase.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167709634299:android:020860d8b0df9a541d4a5e",
+        "android_client_info": {
+          "package_name": "com.example.carassistent"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArY7tJMTKmAtZCcDinGHir3yH9UmRl49M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

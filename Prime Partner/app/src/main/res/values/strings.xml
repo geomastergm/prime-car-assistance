@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Prime Partner</string>
+    
+    <!-- General -->
+        <string name="welcome">მოგესალმებით! Prime Partner აპში</string>
+    <string name="emergency_services">გადაუდებელი დახმარება</string>
+    <string name="my_vehicles">ჩემი მანქანები</string>
+    <string name="profile">პროფილი</string>
+    <string name="settings">პარამეტრები</string>
+    
+    <!-- Services -->
+    <string name="towing">ბუქსირება</string>
+    <string name="evacuation">ევაკუატორი</string>
+    <string name="battery_jump">აკუმულატორი</string>
+    <string name="fuel_delivery">საწვავი</string>
+    <string name="tire_change">გუმის შეცვლა</string>
+    <string name="lockout_service">ჩაკეტვა</string>
+    <string name="call_service">სერვისის გამოძახება</string>
+    
+    <!-- Location -->
+    <string name="current_location">მიმდინარე მდებარეობა</string>
+    <string name="getting_location">მდებარეობის განსაზღვრა...</string>
+    
+    <!-- Authentication -->
+    <string name="phone_number">ტელეფონის ნომერი</string>
+    <string name="first_name">სახელი</string>
+    <string name="last_name">გვარი</string>
+    <string name="password">პაროლი</string>
+    <string name="login">შესვლა</string>
+    <string name="register">რეგისტრაცია</string>
+</resources>

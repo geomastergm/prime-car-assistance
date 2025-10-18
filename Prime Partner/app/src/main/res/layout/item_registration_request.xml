@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:backgroundTint="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="სახელი: გიორგი სახელიძე"
+            android:textColor="@color/primary_red"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ტელეფონი: +995599123456"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ელ-ფოსტა: giorgi@example.com"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:id="@+id/tv_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="კომპანია: სწრაფი დახმარება"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:id="@+id/tv_services"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="სერვისები: ბუქსირება, ევაკუაცია"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:id="@+id/tv_license"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ლიცენზია: LIC123456"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:id="@+id/tv_experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="გამოცდილება: 5 წელი"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:id="@+id/tv_areas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="სამუშაო რეგიონები: თბილისი, რუსთავი"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="სტატუსი: PENDING"
+            android:textColor="@color/secondary_blue"
+            android:textSize="13sp"
+            android:textStyle="italic"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:id="@+id/tv_submitted_at"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="გაგზავნილია: 17/10/2025 14:30"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btn_reject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="უარყოფა"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:layout_marginEnd="8dp"
+                style="@style/Widget.Material3.Button" />
+
+            <Button
+                android:id="@+id/btn_approve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="დამტკიცება"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:backgroundTint="@android:color/holo_green_light"
+                style="@style/Widget.Material3.Button" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

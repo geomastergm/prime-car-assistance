@@ -1,0 +1,69 @@
+{
+  "rules": {
+    "service_requests": {
+      ".read": "auth != null",
+      ".write": "auth != null",
+      ".indexOn": ["status", "requestedAt", "assignedProviderId", "clientId"],
+      "$requestId": {
+        ".validate": "newData.hasChildren(['id', 'serviceType', 'latitude', 'longitude', 'clientName', 'clientPhone', 'clientId', 'status'])"
+      }
+    },
+    "vehicles": {
+      ".read": "auth != null",
+      "$vehicleId": {
+        ".write": "auth != null && (!data.exists() || data.child('userId').val() === auth.uid)",
+        ".validate": "newData.hasChildren(['id', 'userId', 'manufacturer', 'model'])"
+      }
+    },
+    "providers": {
+      ".read": "auth != null",
+      "$providerId": {
+        ".write": "$providerId === auth.uid || auth.token.admin === true",
+        ".validate": "newData.hasChildren(['id', 'name', 'phone', 'serviceTypes'])"
+      }
+    },
+    "provider_registrations": {
+      ".read": "auth != null && auth.token.admin === true",
+      ".write": "auth != null",
+      "$registrationId": {
+        ".validate": "newData.hasChildren(['name', 'phone', 'email', 'serviceTypes'])"
+      }
+    },
+    "payments": {
+      ".read": "auth != null",
+      "$paymentId": {
+        ".write": "auth != null",
+        ".validate": "newData.hasChildren(['id', 'clientId', 'providerId', 'serviceAmount', 'status'])"
+      }
+    },
+    "provider_wallets": {
+      "$providerId": {
+        ".read": "$providerId === auth.uid || auth.token.admin === true",
+        ".write": "$providerId === auth.uid || auth.token.admin === true"
+      }
+    },
+    "withdrawal_requests": {
+      ".read": "auth != null",
+      "$requestId": {
+        ".write": "auth != null"
+      }
+    },
+    "bank_accounts": {
+      "$providerId": {
+        ".read": "$providerId === auth.uid || auth.token.admin === true",
+        ".write": "$providerId === auth.uid || auth.token.admin === true"
+      }
+    },
+    "users": {
+      "$userId": {
+        ".read": "$userId === auth.uid || auth.token.admin === true",
+        ".write": "$userId === auth.uid || auth.token.admin === true",
+        ".validate": "newData.hasChildren(['name', 'phone', 'email'])"
+      }
+    },
+    "admin_logs": {
+      ".read": "auth.token.admin === true",
+      ".write": "auth.token.admin === true"
+    }
+  }
+}

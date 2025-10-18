@@ -1,0 +1,19 @@
+# Firebase Test Script
+# Run this in Firebase Console -> Realtime Database
+
+# Test data to add in service_requests node:
+{
+  "test_request_001": {
+    "id": "test_request_001",
+    "clientName": "ტესტი მომხმარებელი",
+    "clientPhone": "+995599123456",
+    "serviceType": "ბუქსირება",
+    "latitude": 41.7151,
+    "longitude": 44.8271,
+    "address": "რუსთაველის გამზირი 15, თბილისი",
+    "description": "მანქანა ვერ ღებულობს",
+    "status": "PENDING",
+    "requestedAt": 1697544000000,
+    "vehicleId": "BMW X5"
+  }
+}
